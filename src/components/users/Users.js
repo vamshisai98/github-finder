@@ -7,7 +7,7 @@ const Users = () => {
   const githubContext = useContext(GithubContext);
 
   const { loading, users } = githubContext;
-
+  console.log(users);
   if (loading) {
     return <Spinner />;
   } else {
